@@ -39,12 +39,6 @@ console.log(currentDate); // "17.06.2022"
 >`Primechaniye. My dobavili yedinitsu k znacheniyu date.getMonth(), poskol'ku indeksatsiya nachinayetsya s 0. Predpolozhim, my ne khotim ispol'zovat' tire (-) mezhdu znacheniyami dat. Vse, chto nam nuzhno sdelat', eto zamenit' tire tem, chto my predpochitayem.
 Kak ispol'zovat' metod toJSON()`
 
->~~My tol'ko chto uvideli, kak poluchit' tekushchuyu datu s pomoshch'yu metodov date. Teper' davayte posmotrim, kak ispol'zovat' metod toJSON(), kotoryy vozvrashchayet datu v formate gggg-mm-dd v dopolneniye k formatu vremeni chch:mm:ss.ms.~~
-``` js
-pust' data = novaya data().toJSON();
-console.log(data); // 2022-06-17T11:06:50.369Z
-```
-`Poskol'ku nam nuzhna tol'ko tekushchaya data, my mozhem ispol'zovat' metod sreza() takim obrazom, chtoby poluchit' pervyye 10 simvolov:`
 
 `pust' currentDate = novaya data().toJSON().slice(0, 10);
 console.log(currentDate); // "17.06.2022"`
